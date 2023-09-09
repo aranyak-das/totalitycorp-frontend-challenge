@@ -17,14 +17,16 @@ const InputSearchBase = styled(InputBase)`
 `;
 
 function Search() {
-  //   const boxStyles = {
-  //     backgroundColor: "blue",
-  //   };
+  const boxStyles = {
+    color: "black",
+    padding: "5px",
+    display: "flex",
+  };
 
   return (
     <SearchContainer>
       <InputSearchBase placeholder="Search for products, brands and more" />
-      <Box style={{ color: "black", padding: "2px" }}>
+      <Box style={{ boxStyles }}>
         <SearchIcon />
       </Box>
     </SearchContainer>
