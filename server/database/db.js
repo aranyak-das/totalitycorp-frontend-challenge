@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
 
-export const Connection = async () => {
-  const URL =
-    "mongodb+srv://aranyakcommercial9:aranyakdas@ecommerce-web.99hvopu.mongodb.net/?retryWrites=true&w=majority";
+export const Connection = async (username, password) => {
+  const URL = `mongodb+srv://${username}:${password}@ecommerce-web.99hvopu.mongodb.net/?retryWrites=true&w=majority`;
   try {
     await mongoose.connect(URL, {
       useUnifiedTopology: true,

@@ -1,4 +1,3 @@
-import React from "react";
 import { products } from "./constants/data.js";
 import Product from "./model/product-schema.js";
 
